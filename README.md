@@ -3,6 +3,7 @@
 This repository contains code and data for evaluating the performance of various language models in assisting with the generation of PubMed search queries. The evaluation is conducted on a set of 9 representative prompts that a user might pass to a model to help generate an advanced search query.
 
 ## Language Models Evaluated
+
 The following language models are currently being evaluated:
 
 - anthropic/claude-3-opus
@@ -15,6 +16,7 @@ The following language models are currently being evaluated:
 This selection includes both open-source and closed models.
 
 ## Evaluation Metrics
+
 For each prompt, the generated query is passed to the PubMed API, and the initial search results are parsed to provide a crude sense of query performance. The evaluation metrics include:
 
 - The number of search results returned by PubMed (note: more results do not necessarily indicate a better query, as overly broad queries can return too many results)
@@ -25,6 +27,7 @@ For each prompt, the generated query is passed to the PubMed API, and the initia
 Please note that this evaluation does not closely assess the relevance of the retrieved articles, but rather provides a general indication of query performance.
 
 ## Results Summary
+
 Here is a summary table of the search result counts for each model across the 9 test prompts:
 
 | search_idx | anthropic/claude-3-opus | cohere/command-r-plus | databricks/dbrx-instruct | mistralai/mistral-7b-instruct:free | mistralai/mixtral-8x7b-instruct | openai/gpt-4-0314 |
@@ -40,4 +43,5 @@ Here is a summary table of the search result counts for each model across the 9 
 | 8          | 1525                     | 14562                  | 1332                      | 21750                               | 0                                | 11239              |
 
 ## Usage
+
 A Jupyter notebook demonstrating how to run this evaluation on your own will be shared in the future. Please stay tuned for updates.
