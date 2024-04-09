@@ -1,4 +1,4 @@
-# PubMed Query Generation Evaluation
+# LLM PubMed Query Generation Evaluation
 
 This repository contains code and data for evaluating the performance of various language models in assisting with the generation of PubMed search queries. The evaluation is conducted on a set of 9 representative prompts that a user might pass to a model to help generate an advanced search query.
 
